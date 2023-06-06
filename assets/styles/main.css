@@ -1,0 +1,25 @@
+@import url(./font.css);
+@import url(./tailwind.css);
+
+
+/* main {
+    width: 1440px;
+    border: 1px solid red;
+    margin: auto;
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* remove number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+.container {
+    @apply mx-auto xl:w-[1000px] w-[90%];
+}
+.button-primary {
+    @apply border border-primary bg-primary font-550 text-[15px] leading-[20px] rounded-xl text-white px-3 py-2.5 hover:bg-gradient-to-b hover:from-primary hover:to-link;
+}
+.button-secondary {
+    @apply border border-stroke rounded-xl font-550 text-[15px] leading-[20px] px-3 py-2.5 hover:bg-w2;
+}
+.title {
+    @apply font-bold text-[64px] leading-[120%];
+}
+.heading1 {
+    @apply font-bold text-[40px] leading-[130%];
+}
+.heading2 {
+    @apply font-bold text-4xl leading-[130%];
+}
+.heading3 {
+    @apply font-bold text-2xl leading-[130%];
+}
+.body {
+    @apply font-450 text-xl leading-[150%];
+}
+.bodysmall {
+    @apply font-normal text-base leading-[150%];
+}
+.pagination {
+    @apply h-2.5 w-2.5 bg-white/40 rounded-full transition-all duration-700 ease-in-out;
+    &.--active {
+        @apply w-4 bg-white;
+    }
+}
+@tailwind utilities;
