@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 .container {
-    @apply mx-auto xl:w-[1000px] w-[90%];
+    @apply mx-auto xl:w-[1000px] w-[95%];
 }
 .button-primary {
     @apply border border-primary bg-primary font-550 text-[15px] leading-[20px] rounded-xl text-white px-3 py-2.5 hover:bg-gradient-to-b hover:from-primary hover:to-link;
@@ -10,19 +10,19 @@
     @apply border border-stroke rounded-xl font-550 text-[15px] leading-[20px] px-3 py-2.5 hover:bg-w2;
 }
 .title {
-    @apply font-bold text-[64px] leading-[120%];
+    @apply font-bold xl:text-[64px] leading-[120%] text-[42px];
 }
 .heading1 {
-    @apply font-bold text-[40px] leading-[130%];
+    @apply font-bold xl:text-[40px] leading-[130%] text-[32px];
 }
 .heading2 {
-    @apply font-bold text-4xl leading-[130%];
+    @apply font-bold text-4xl leading-[130%] text-[26px];
 }
 .heading3 {
     @apply font-bold text-2xl leading-[130%];
 }
 .body {
-    @apply font-450 text-xl leading-[150%];
+    @apply font-450 xl:text-xl leading-[150%] text-base;
 }
 .bodysmall {
     @apply font-normal text-base leading-[150%];

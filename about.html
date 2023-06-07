@@ -18,16 +18,34 @@
         <section>
             <div class="bg-white">
                 <div class="container flex items-center justify-between">
-                    <div id="logo">
+                    <div id="logo" class="my-4">
                         <a href="index.html"><img src="./assets/images/logo.png" alt="Ocean Remit"></a>
                     </div>
-                    <div id="links" class="flex items-center gap-x-10 my-4 font-medium text-[15px]">
+                    <div id="links" class="xl:flex items-center gap-x-10 my-4 font-medium text-[15px] hidden">
                         <a href="#">Send Money</a>
                         <a href="#">Track Transaction</a>
                         <div id="button" class="flex items-center gap-x-3">
                             <button class="button-secondary">Sign In</button>
                             <button class="button-primary">Register</button>
                         </div>
+                    </div>
+                    <div class="block xl:hidden text-xl" id="slideNaviationTrigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-nav" class="fixed inset-0 left-[40%] bg-white duration-300 ease-in-out overflow-hidden max-h-screen opacity-0 z-[-1]">
+                <div class="container my-4 p-4">
+                    <div class="flex items-center w-full flex-row-reverse text-xl">
+                        <div id="closeNavigator">
+                            <i class="fa-solid fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-4">
+                        <a href="#">Send Money</a>
+                        <a href="#">Track Transaction</a>
+                        <button class="button-secondary">Sign In</button>
+                        <button class="button-primary">Register</button>
                     </div>
                 </div>
             </div>
@@ -53,21 +71,21 @@
         </section>
 
         <!-- status -->
-        <section class="py-[70px]">
-            <div class="container grid grid-cols-4 gap-x-5">
-                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px]">
+        <section class="xl:py-[70px] py-12">
+            <div class="container xl:grid grid-cols-4 gap-x-5">
+                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px] m-12 xl:m-0">
                     <p class="font-semibold text-[40px] leading-[52px]">10,000+</p>
                     <p class="font-450 leading-7">Monthly users</p>
                 </div>
-                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px]">
+                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px] m-12 xl:m-0">
                     <p class="font-semibold text-[40px] leading-[52px]">XX+</p>
                     <p class="font-450 leading-7">Usable Data</p>
                 </div>
-                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px]">
+                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px] m-12 xl:m-0">
                     <p class="font-semibold text-[40px] leading-[52px]">XX+</p>
                     <p class="font-450 leading-7">Usable Data</p>
                 </div>
-                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px]">
+                <div class="bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] py-11 text-center rounded-[20px] m-12 xl:m-0">
                     <p class="font-semibold text-[40px] leading-[52px]">2+</p>
                     <p class="font-450 leading-7">Currency Supported</p>
                 </div>
@@ -76,8 +94,8 @@
 
         <!-- our mission -->
         <section>
-            <div class="container bg-white rounded-[30px] flex items-center">
-                <div class="w-[54%] py-[54px] pl-8 pr-16">
+            <div class="container bg-white rounded-[30px] xl:flex items-center p-8 xl:p-0">
+                <div class="xl:w-[54%] xl:py-[54px] xl:pl-8 xl:pr-16">
                     <p class="heading2">Our Mission</p>
                     <p class="body mt-6">At Ocean Remit, our mission is to dissolve borders and bridge distances in the world of finance.
                         We aim to empower individuals and businesses to effortlessly manage their cross-border
@@ -86,30 +104,30 @@
                         your funds reach their intended destination promptly and reliably, reflecting the vast,
                         unfettered expanse of the ocean itself</p>
                 </div>
-                <img src="./assets/images/our-mission.png" alt="Our Mission" class="w-[46%] !h-auto rounded-r-[30px]">
+                <img src="./assets/images/our-mission.png" alt="Our Mission" class="xl:w-[46%] !h-auto rounded-[30px] mt-8 xl:mt-0">
             </div>
         </section>
 
         <!-- newsroom -->
         <section>
-            <div class="container my-28 text-center">
+            <div class="container xl:my-28 mt-12 text-center">
                 <p class="heading1">More from our newsroom</p>
-                <div class="grid grid-cols-3 gap-x-5 my-[50px]">
-                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)]">
+                <div class="xl:grid grid-cols-3 gap-x-5 my-[50px]">
+                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] m-12 xl:m-0">
                         <div class="bg-b1 h-60 rounded-t-[20px]"></div>
                         <div class="p-5 text-left">
                             <p class="font-medium text-[15px] tracking-wide">January 20, 2023</p>
                             <p class="font-semibold text-base mt-2.5">Revision on the fees and exchange rate</p>
                         </div>
                     </div>
-                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)]">
+                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] m-12 xl:m-0">
                         <div class="bg-b1 h-60 rounded-t-[20px]"></div>
                         <div class="p-5 text-left">
                             <p class="font-medium text-[15px] tracking-wide">January 20, 2023</p>
                             <p class="font-semibold text-base mt-2.5">Ocean Remit announces new partnership with NIC Asia Bank</p>
                         </div>
                     </div>
-                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)]">
+                    <div class="rounded-[20px] bg-white shadow-[0_4px_32px_rgba(0,0,0,0.03)] m-12 xl:m-0">
                         <div class="bg-b1 h-60 rounded-t-[20px]"></div>
                         <div class="p-5 text-left">
                             <p class="font-medium text-[15px] tracking-wide">January 20, 2023</p>
@@ -126,20 +144,20 @@
         <!-- send money -->
         <section class="bg-primary">
             <div class="container text-center text-white py-[65px]">
-                <p class="font-bold text-[40px] px-[102px] leading-normal">Transfer money Internationally today with
+                <p class="heading1 xl:px-[102px] leading-normal">Transfer money Internationally today with
                     Ocean Remit</p>
-                <p class="font-medium text-xl mt-6">Check out our exchange rates</p>
+                <p class="body mt-6">Check out our exchange rates</p>
                 <button class="mt-7 bg-white text-b1 px-3 py-2.5 rounded-[10px] text-[15px] leading-5">Send
                     Money</button>
             </div>
         </section>
-        
+
         <!-- footer -->
         <section id="footer" class="bg-white pt-10 pb-3.5">
             <div class="container">
-                <div class="grid grid-cols-4">
+                <div class="xl:grid grid-cols-4">
                     <div>
-                        <div class="text-[15px] font-550">Services</div>
+                        <div class="text-[15px] font-550 mt-12 xl:mt-0">Services</div>
                         <div class="mt-4 flex flex-col gap-2.5">
                             <a href="#" class="font-450 text-sm text-b1">Send Money</a>
                             <a href="#" class="font-450 text-sm text-b1">Track Transactions</a>
@@ -147,9 +165,9 @@
                         </div>
                     </div>
                     <div>
-                        <div class="text-[15px] font-550">Company</div>
+                        <div class="text-[15px] font-550 mt-12 xl:mt-0">Company</div>
                         <div class="mt-4 flex flex-col gap-2.5">
-                            <a href="#" class="font-450 text-sm text-b1">About us</a>
+                            <a href="about.html" class="font-450 text-sm text-b1">About us</a>
                             <a href="#" class="font-450 text-sm text-b1">Become an Partner</a>
                             <a href="#" class="font-450 text-sm text-b1">Press Release</a>
                             <a href="#" class="font-450 text-sm text-b1">FAQs</a>
@@ -157,7 +175,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="text-[15px] font-550">Legal</div>
+                        <div class="text-[15px] font-550 mt-12 xl:mt-0">Legal</div>
                         <div class="mt-4 flex flex-col gap-2.5">
                             <a href="#" class="font-450 text-sm text-b1">Terms and Condition</a>
                             <a href="#" class="font-450 text-sm text-b1">Privacy Policy</a>
@@ -169,7 +187,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="text-[15px] font-550">Contact Information</div>
+                        <div class="text-[15px] font-550 mt-12 xl:mt-0">Contact Information</div>
                         <div class="mt-4 flex flex-col gap-2.5">
                             <span class="block font-450 text-sm">New Baneshwor, Kathmandu</span>
                             <a href="#" class="text-link font-450 text-sm">Locate on Map</a>

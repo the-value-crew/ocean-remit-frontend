@@ -18,16 +18,34 @@
         <section>
             <div class="bg-white">
                 <div class="container flex items-center justify-between">
-                    <div id="logo">
+                    <div id="logo" class="my-4">
                         <a href="index.html"><img src="./assets/images/logo.png" alt="Ocean Remit"></a>
                     </div>
-                    <div id="links" class="flex items-center gap-x-10 my-4 font-medium text-[15px]">
-                        <a href="">Send Money</a>
-                        <a href="">Track Transaction</a>
+                    <div id="links" class="xl:flex items-center gap-x-10 my-4 font-medium text-[15px] hidden">
+                        <a href="#">Send Money</a>
+                        <a href="#">Track Transaction</a>
                         <div id="button" class="flex items-center gap-x-3">
                             <button class="button-secondary">Sign In</button>
                             <button class="button-primary">Register</button>
                         </div>
+                    </div>
+                    <div class="block xl:hidden text-xl" id="slideNaviationTrigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-nav" class="fixed inset-0 left-[40%] bg-white duration-300 ease-in-out overflow-hidden max-h-screen opacity-0 z-[-1]">
+                <div class="container my-4 p-4">
+                    <div class="flex items-center w-full flex-row-reverse text-xl">
+                        <div id="closeNavigator">
+                            <i class="fa-solid fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-4">
+                        <a href="#">Send Money</a>
+                        <a href="#">Track Transaction</a>
+                        <button class="button-secondary">Sign In</button>
+                        <button class="button-primary">Register</button>
                     </div>
                 </div>
             </div>
@@ -35,7 +53,7 @@
 
         <!-- hero section -->
         <section>
-            <div class="container xl:flex items-center my-36 gap-x-[66px]">
+            <div class="container xl:flex items-center xl:my-36 mt-28 gap-x-[66px]">
                 <div class="xl:w-1/2 xl:text-left text-center">
                     <div class="block uppercase font-medium text-b2 tracking-wide leading-5">
                         send money abroad
@@ -97,7 +115,7 @@
 
         <!-- exchange rates -->
         <section>
-            <div class="container rounded-[30px] bg-white py-20 px-[60px] xl:flex items-center my-[30px]">
+            <div class="container rounded-[30px] bg-white py-20 xl:px-[60px] px-10 xl:flex items-center my-[30px]">
                 <div class="xl:w-1/2 xl:flex justify-start"><img src="./assets/images/better-rates.png" alt="Better Rates">
                 </div>
                 <div class="xl:w-1/2 xl:mt-0 mt-12">
@@ -110,7 +128,7 @@
 
         <!-- no hidden fee -->
         <section>
-            <div class="container rounded-[30px] bg-white py-20 px-[60px] xl:flex items-center my-[30px]">
+            <div class="container rounded-[30px] bg-white py-20 xl:px-[60px] px-10 xl:flex items-center my-[30px]">
                 <div class="xl:w-1/2">
                     <div class="heading2">Easy Transactions with No Hidden Fees</div>
                     <div class="mt-8 body">Say goodbye to exorbitant fees. With Ocean Remit, enjoy highly competitive
@@ -136,7 +154,7 @@
 
         <!-- security -->
         <section>
-            <div class="container rounded-[30px] bg-white py-20 px-[60px] xl:flex items-center my-[30px]">
+            <div class="container rounded-[30px] bg-white py-20 xl:px-[60px] px-10 xl:flex items-center my-[30px]">
                 <div class="xl:w-1/2 xl:flex justify-start"><img src="./assets/images/security.png" alt="Security"></div>
                 <div class="xl:w-1/2 xl:mt-0 mt-12">
                     <div class="heading2">Unrivaled Security for Your Peace of Mind</div>
@@ -148,7 +166,7 @@
 
         <!-- transaction -->
         <section>
-            <div class="container rounded-[30px] bg-white py-20 px-[60px] xl:flex items-center my-[30px]">
+            <div class="container rounded-[30px] bg-white py-20 xl:px-[60px] px-10 xl:flex items-center my-[30px]">
                 <div class="xl:w-1/2">
                     <div class="heading2">Real-Time Tracking for Every Transaction</div>
                     <div class="mt-8 body">Follow your money's journey with our easy-to-use tracking feature. With Ocean
@@ -181,7 +199,7 @@
                     </div>
                     <div class="xl:w-1/2 xl:pl-[60px] mt-12 xl:mt-0">
                         <div>
-                            <div class="font-550 text-2xl leading-9">
+                            <div class="font-550 xl:text-2xl leading-9 text-lg">
                                 Ocean Remit has made it so easy for me to support my family back in Nepal. Their service
                                 is
                                 quick, easy, and I can trust that my money is secure. Their fees are so reasonable
@@ -272,10 +290,10 @@
                 <div class="container text-center">
                     <p class="font-medium text-b2">Need a little more help?</p>
                     <p class="heading1 mt-4">Ocean Remit FAQs</p>
-                    <div class="mt-[60px] rounded-[10px]">
+                    <div class="mt-[60px] rounded-[10px] text-left">
                         <div class="faq-collaspe">
                             <div
-                                class="flex items-center justify-between p-5 border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
+                                class="flex gap-x-2 items-center justify-between p-5 border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
                                 <p class="font-550 text-xl">What are the limits for money transfers?</p>
                                 <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
                                 <span class="minus-icon hidden"><i class="fa-solid fa-circle-minus"></i></span>
@@ -296,7 +314,7 @@
                         </div>
                         <div class="faq-collaspe">
                             <div
-                                class="flex items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
+                                class="flex gap-x-2 items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
                                 <p class="font-550 text-xl">How long does it take for the money to arrive?</p>
                                 <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
                                 <span class="minus-icon hidden"><i class="fa-solid fa-circle-minus"></i></span>
@@ -317,7 +335,7 @@
                         </div>
                         <div class="faq-collaspe">
                             <div
-                                class="flex items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
+                                class="flex gap-x-2 items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
                                 <p class="font-550 text-xl">How can I track my transaction?</p>
                                 <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
                                 <span class="minus-icon hidden"><i class="fa-solid fa-circle-minus"></i></span>
@@ -338,7 +356,7 @@
                         </div>
                         <div class="faq-collaspe">
                             <div
-                                class="flex items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
+                                class="flex gap-x-2 items-center justify-between p-5 border-t border-b border-stroke cursor-pointer bg-white hover:bg-w2 question">
                                 <p class="font-550 text-xl">What are the fees for using Ocean Remit?</p>
                                 <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
                                 <span class="minus-icon hidden"><i class="fa-solid fa-circle-minus"></i></span>
@@ -359,7 +377,7 @@
                         </div>
                         <div class="faq-collaspe">
                             <div
-                                class="flex items-center justify-between p-5 border-t border-stroke cursor-pointer bg-white hover:bg-w2 question">
+                                class="flex gap-x-2 items-center justify-between p-5 border-t border-stroke cursor-pointer bg-white hover:bg-w2 question">
                                 <p class="font-550 text-xl">Can I cancel a transaction?</p>
                                 <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
                                 <span class="minus-icon hidden"><i class="fa-solid fa-circle-minus"></i></span>
@@ -386,9 +404,9 @@
         <!-- send money -->
         <section class="bg-primary">
             <div class="container text-center text-white py-[65px]">
-                <p class="font-bold text-[40px] xl:px-[102px] leading-normal">Transfer money Internationally today with
+                <p class="heading1 xl:px-[102px] leading-normal">Transfer money Internationally today with
                     Ocean Remit</p>
-                <p class="font-medium text-xl mt-6">Check out our exchange rates</p>
+                <p class="body mt-6">Check out our exchange rates</p>
                 <button class="mt-7 bg-white text-b1 px-3 py-2.5 rounded-[10px] text-[15px] leading-5">Send
                     Money</button>
             </div>

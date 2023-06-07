@@ -1,3 +1,22 @@
+var body = document.querySelector('body')
+
+//slideNaviationTrigger
+var navigationOpenTrigger = document.querySelector('#slideNaviationTrigger')
+navigationOpenTrigger.addEventListener('click', function() {
+    var navigationPannel = document.querySelector('#mobile-nav')
+    navigationPannel.classList.remove('opacity-0')
+    navigationPannel.classList.remove('z-[-1]')
+    body.classList.add('overflow-hidden')
+})
+
+var navigationCloseTrigger = document.querySelector('#closeNavigator')
+navigationCloseTrigger.addEventListener('click', function() {
+    var navigationPannel = document.querySelector('#mobile-nav')
+    navigationPannel.classList.add('opacity-0')
+    navigationPannel.classList.add('z-[-1]')
+    body.classList.remove('overflow-hidden')
+})
+
 //input width fit content
 var inputs = document.querySelectorAll('.money-input');
 inputs.forEach(function(input) {
